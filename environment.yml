@@ -1,0 +1,14 @@
+name: scv-icassp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - scipy>=1.10
+  - pandas>=2.0
+  - pytest>=7.4
+  - pip
+  - pip:
+      - python-dateutil>=2.8
+# Role: full test suite + reproduce.py checks. Inference uses an external
+# Ollama runtime (qwen3:8b), not this environment.

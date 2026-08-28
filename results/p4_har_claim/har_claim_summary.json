@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "experiment_id": "p4_har_claim_v1",
+    "seed": 20260825,
+    "dictionary_id": "p4_har_claim_dictionary_v1",
+    "dictionary_sha256": "f72a5b1419ff7b5badf0ede5d264750d5ca75ba863972c5ebb23e73cc1d2d906",
+    "n_train_windows": 428,
+    "n_test_windows": 444,
+    "n_items": 1776,
+    "recognition_accuracy_challenge": 0.9166666666666666,
+    "run_count": 1
+  },
+  "metrics": {
+    "har": {
+      "fcr": 1.0,
+      "unknown_rate": 0.0,
+      "legal": {
+        "n": 444,
+        "verdict_accuracy": 0.39414414414414417,
+        "unknown_rate": 0.0,
+        "supported_recall": 0.8871794871794871,
+        "contradicted_recall": 0.008032128514056224,
+        "gold_counts": {
+          "CONTRADICTED": 249,
+          "SUPPORTED": 195
+        },
+        "pred_counts": {
+          "SUPPORTED": 420,
+          "CONTRADICTED": 24
+        }
+      },
+      "illegal": {
+        "n": 1332,
+        "verdict_accuracy": 0.0,
+        "unknown_rate": 0.0,
+        "supported_recall": null,
+        "contradicted_recall": null,
+        "gold_counts": {
+          "UNVERIFIABLE": 1332
+        },
+        "pred_counts": {
+          "SUPPORTED": 1232,
+          "CONTRADICTED": 100
+        }
+      },
+      "all": {
+        "n": 1776,
+        "verdict_accuracy": 0.09853603603603604,
+        "unknown_rate": 0.0,
+        "supported_recall": 0.8871794871794871,
+        "contradicted_recall": 0.008032128514056224,
+        "gold_counts": {
+          "CONTRADICTED": 249,
+          "UNVERIFIABLE": 1332,
+          "SUPPORTED": 195
+        },
+        "pred_counts": {
+          "SUPPORTED": 1652,
+          "CONTRADICTED": 124
+        }
+      }
+    },
+    "proposed": {
+      "fcr": 0.0,
+      "unknown_rate": 0.75,
+      "legal": {
+        "n": 444,
+        "verdict_accuracy": 1.0,
+        "unknown_rate": 0.0,
+        "supported_recall": 1.0,
+        "contradicted_recall": 1.0,
+        "gold_counts": {
+          "CONTRADICTED": 249,
+          "SUPPORTED": 195
+        },
+        "pred_counts": {
+          "CONTRADICTED": 249,
+          "SUPPORTED": 195
+        }
+      },
+      "illegal": {
+        "n": 1332,
+        "verdict_accuracy": 1.0,
+        "unknown_rate": 1.0,
+        "supported_recall": null,
+        "contradicted_recall": null,
+        "gold_counts": {
+          "UNVERIFIABLE": 1332
+        },
+        "pred_counts": {
+          "UNVERIFIABLE": 1332
+        }
+      },
+      "all": {
+        "n": 1776,
+        "verdict_accuracy": 1.0,
+        "unknown_rate": 0.75,
+        "supported_recall": 1.0,
+        "contradicted_recall": 1.0,
+        "gold_counts": {
+          "CONTRADICTED": 249,
+          "UNVERIFIABLE": 1332,
+          "SUPPORTED": 195
+        },
+        "pred_counts": {
+          "CONTRADICTED": 249,
+          "UNVERIFIABLE": 1332,
+          "SUPPORTED": 195
+        }
+      }
+    }
+  },
+  "audit": {
+    "all_unused_mappable": {
+      "MHEALTH": {
+        "subjects": [
+          "mHealth_subject1",
+          "mHealth_subject10",
+          "mHealth_subject2",
+          "mHealth_subject4",
+          "mHealth_subject5",
+          "mHealth_subject7",
+          "mHealth_subject8"
+        ],
+        "n_subjects": 7,
+        "n_windows": 109,
+        "activities": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "sampling_rate_hz": [
+          50.0
+        ],
+        "splits": {
+          "development": 45,
+          "challenge": 64
+        }
+      },
+      "PAMAP2": {
+        "subjects": [
+          "subject101",
+          "subject102",
+          "subject108"
+        ],
+        "n_subjects": 3,
+        "n_windows": 12,
+        "activities": [
+          "1"
+        ],
+        "sampling_rate_hz": [
+          100.0
+        ],
+        "splits": {
+          "development": 9,
+          "challenge": 3
+        }
+      },
+      "WISDM": {
+        "subjects": [
+          "data_1600_accel_watch",
+          "data_1602_accel_watch",
+          "data_1603_accel_watch",
+          "data_1605_accel_watch",
+          "data_1606_accel_watch",
+          "data_1608_accel_watch",
+          "data_1609_accel_watch",
+          "data_1611_accel_watch",
+          "data_1612_accel_watch",
+          "data_1614_accel_watch",
+          "data_1615_accel_watch",
+          "data_1617_accel_watch",
+          "data_1618_accel_watch",
+          "data_1620_accel_watch",
+          "data_1621_accel_watch",
+          "data_1623_accel_watch",
+          "data_1624_accel_watch",
+          "data_1626_accel_watch",
+          "data_1627_accel_watch",
+          "data_1629_accel_watch",
+          "data_1630_accel_watch",
+          "data_1632_accel_watch",
+          "data_1633_accel_watch",
+          "data_1635_accel_watch",
+          "data_1636_accel_watch",
+          "data_1638_accel_watch",
+          "data_1639_accel_watch",
+          "data_1641_accel_watch",
+          "data_1642_accel_watch",
+          "data_1644_accel_watch",
+          "data_1645_accel_watch",
+          "data_1647_accel_watch",
+          "data_1648_accel_watch",
+          "data_1650_accel_watch"
+        ],
+        "n_subjects": 34,
+        "n_windows": 751,
+        "activities": [
+          "A",
+          "B"
+        ],
+        "sampling_rate_hz": [
+          20.0
+        ],
+        "splits": {
+          "development": 374,
+          "challenge": 377
+        }
+      }
+    },
+    "train_development": {
+      "MHEALTH": {
+        "subjects": [
+          "mHealth_subject1",
+          "mHealth_subject4",
+          "mHealth_subject7"
+        ],
+        "n_subjects": 3,
+        "n_windows": 45,
+        "activities": [
+          "1",
+          "2",
+          "5"
+        ],
+        "sampling_rate_hz": [
+          50.0
+        ],
+        "splits": {
+          "development": 45,
+          "challenge": 0
+        }
+      },
+      "PAMAP2": {
+        "subjects": [
+          "subject101"
+        ],
+        "n_subjects": 1,
+        "n_windows": 9,
+        "activities": [
+          "1"
+        ],
+        "sampling_rate_hz": [
+          100.0
+        ],
+        "splits": {
+          "development": 9,
+          "challenge": 0
+        }
+      },
+      "WISDM": {
+        "subjects": [
+          "data_1602_accel_watch",
+          "data_1605_accel_watch",
+          "data_1608_accel_watch",
+          "data_1611_accel_watch",
+          "data_1614_accel_watch",
+          "data_1617_accel_watch",
+          "data_1620_accel_watch",
+          "data_1623_accel_watch",
+          "data_1626_accel_watch",
+          "data_1629_accel_watch",
+          "data_1632_accel_watch",
+          "data_1635_accel_watch",
+          "data_1638_accel_watch",
+          "data_1641_accel_watch",
+          "data_1644_accel_watch",
+          "data_1647_accel_watch",
+          "data_1650_accel_watch"
+        ],
+        "n_subjects": 17,
+        "n_windows": 374,
+        "activities": [
+          "A",
+          "B"
+        ],
+        "sampling_rate_hz": [
+          20.0
+        ],
+        "splits": {
+          "development": 374,
+          "challenge": 0
+        }
+      }
+    },
+    "test_challenge": {
+      "MHEALTH": {
+        "subjects": [
+          "mHealth_subject10",
+          "mHealth_subject2",
+          "mHealth_subject5",
+          "mHealth_subject8"
+        ],
+        "n_subjects": 4,
+        "n_windows": 64,
+        "activities": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "sampling_rate_hz": [
+          50.0
+        ],
+        "splits": {
+          "development": 0,
+          "challenge": 64
+        }
+      },
+      "PAMAP2": {
+        "subjects": [
+          "subject102",
+          "subject108"
+        ],
+        "n_subjects": 2,
+        "n_windows": 3,
+        "activities": [
+          "1"
+        ],
+        "sampling_rate_hz": [
+          100.0
+        ],
+        "splits": {
+          "development": 0,
+          "challenge": 3
+        }
+      },
+      "WISDM": {
+        "subjects": [
+          "data_1600_accel_watch",
+          "data_1603_accel_watch",
+          "data_1606_accel_watch",
+          "data_1609_accel_watch",
+          "data_1612_accel_watch",
+          "data_1615_accel_watch",
+          "data_1618_accel_watch",
+          "data_1621_accel_watch",
+          "data_1624_accel_watch",
+          "data_1627_accel_watch",
+          "data_1630_accel_watch",
+          "data_1633_accel_watch",
+          "data_1636_accel_watch",
+          "data_1639_accel_watch",
+          "data_1642_accel_watch",
+          "data_1645_accel_watch",
+          "data_1648_accel_watch"
+        ],
+        "n_subjects": 17,
+        "n_windows": 377,
+        "activities": [
+          "A",
+          "B"
+        ],
+        "sampling_rate_hz": [
+          20.0
+        ],
+        "splits": {
+          "development": 0,
+          "challenge": 377
+        }
+      }
+    }
+  },
+  "model": {
+    "architecture": "RandomForestClassifier",
+    "n_estimators": 100,
+    "max_depth": 12,
+    "min_samples_leaf": 2,
+    "random_state": 20260825,
+    "features": [
+      "x_accel:mean",
+      "x_accel:std",
+      "x_accel:min",
+      "x_accel:max",
+      "x_accel:rms",
+      "x_accel:dom_freq",
+      "y_accel:mean",
+      "y_accel:std",
+      "y_accel:min",
+      "y_accel:max",
+      "y_accel:rms",
+      "y_accel:dom_freq",
+      "chest_accel:mean",
+      "chest_accel:std",
+      "chest_accel:min",
+      "chest_accel:max",
+      "chest_accel:rms",
+      "chest_accel:dom_freq",
+      "ankle_accel:mean",
+      "ankle_accel:std",
+      "ankle_accel:min",
+      "ankle_accel:max",
+      "ankle_accel:rms",
+      "ankle_accel:dom_freq",
+      "hand_accel:mean",
+      "hand_accel:std",
+      "hand_accel:min",
+      "hand_accel:max",
+      "hand_accel:rms",
+      "hand_accel:dom_freq"
+    ],
+    "training": "subject-grouped existing development split; unused labeled windows only"
+  }
+}

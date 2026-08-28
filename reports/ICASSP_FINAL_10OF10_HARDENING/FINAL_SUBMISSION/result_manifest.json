@@ -1,0 +1,137 @@
+[
+  {
+    "result_id": "h4_property_pass",
+    "source_command": "frozen H4 property suite (do not rerun for new science)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H4_PROPERTY_VALIDATION/h4_score_stamp.json",
+    "sha256": null,
+    "expected_metric": "pass/total",
+    "expected_value": "9000/9000",
+    "class": "R2"
+  },
+  {
+    "result_id": "h3_vfc",
+    "source_command": "frozen H3 intervention scorer",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H3_PHYSICAL_INTERVENTION/h3_score_stamp.json",
+    "sha256": null,
+    "expected_metric": "vfc",
+    "expected_value": "771/771",
+    "class": "R2"
+  },
+  {
+    "result_id": "h3_dmc",
+    "source_command": "frozen H3 intervention scorer",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H3_PHYSICAL_INTERVENTION/h3_score_stamp.json",
+    "sha256": null,
+    "expected_metric": "dmc",
+    "expected_value": "742/773",
+    "class": "R2"
+  },
+  {
+    "result_id": "h3_lag_dmc_all",
+    "source_command": "frozen H3 lag analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H3_PHYSICAL_INTERVENTION/H3_LAG_IDENTIFIABILITY_ANALYSIS.md",
+    "sha256": null,
+    "expected_metric": "lag_dmc_all",
+    "expected_value": "51/79",
+    "class": "R2"
+  },
+  {
+    "result_id": "h3_lag_dmc_nocouple",
+    "source_command": "frozen H3 lag analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H3_PHYSICAL_INTERVENTION/H3_LAG_IDENTIFIABILITY_ANALYSIS.md",
+    "sha256": null,
+    "expected_metric": "lag_dmc_nocouple",
+    "expected_value": "51/53",
+    "class": "R2"
+  },
+  {
+    "result_id": "h3_lag_vfc",
+    "source_command": "frozen H3 lag analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H3_PHYSICAL_INTERVENTION/H3_LAG_IDENTIFIABILITY_ANALYSIS.md",
+    "sha256": null,
+    "expected_metric": "lag_vfc",
+    "expected_value": "77/77",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2_exact",
+    "source_command": "official one-shot (sealed; do not rerun)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H2_SEALED_LANGUAGE/h2_official_predictions.jsonl",
+    "sha256": "661709fc7bc1e82921995e72b9db06e9f072f2946c35a5cf1a5336d7c4e8a27e",
+    "expected_metric": "exact",
+    "expected_value": "326/448",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2_verdict",
+    "source_command": "official one-shot (sealed; do not rerun)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H2_SEALED_LANGUAGE/h2_official_predictions.jsonl",
+    "sha256": "661709fc7bc1e82921995e72b9db06e9f072f2946c35a5cf1a5336d7c4e8a27e",
+    "expected_metric": "verdict",
+    "expected_value": "395/448",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2_fcr",
+    "source_command": "official one-shot (sealed; do not rerun)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/H2_SEALED_LANGUAGE/H2_OFFICIAL_ONE_SHOT_REPORT.md",
+    "sha256": null,
+    "expected_metric": "fcr",
+    "expected_value": "16/64",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2b_v1_fcr",
+    "source_command": "official paired one-shot (sealed; do not rerun)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/V2/H2B/h2b_v1_predictions.jsonl",
+    "sha256": "9526896e1c2d5dd82ea67bb53766d422b2baf1ad174ecc79b71d2054543a9e7e",
+    "expected_metric": "fcr",
+    "expected_value": "102/192",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2b_v2_fcr",
+    "source_command": "official paired one-shot (sealed; do not rerun)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/V2/H2B/h2b_v2_predictions.jsonl",
+    "sha256": "c260a3f8af8e33489d35f1522eef88fb28981cc968fb6327a4ffbc425dda4724",
+    "expected_metric": "fcr",
+    "expected_value": "47/192",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2b_licensed_verdict",
+    "source_command": "official paired one-shot analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/V2/H2B/h2b_official_analysis_stamp.json",
+    "sha256": null,
+    "expected_metric": "licensed_verdict",
+    "expected_value": "522/576",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2b_channel_grounding_fc",
+    "source_command": "paired case analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/V2/H2B/h2b_case_results.csv",
+    "sha256": null,
+    "expected_metric": "v1->v2",
+    "expected_value": "44->0",
+    "class": "R2"
+  },
+  {
+    "result_id": "h2b_alternate_substitution",
+    "source_command": "paired case analysis",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/V2/H2B/h2b_case_results.csv",
+    "sha256": null,
+    "expected_metric": "v1->v2",
+    "expected_value": "11->0",
+    "class": "R2"
+  },
+  {
+    "result_id": "sealed_828",
+    "source_command": "frozen direct-family holdout (do not reopen gold)",
+    "source_artifact": "reports/ICASSP_FINAL_10OF10_HARDENING/SEALED_HOLDOUT_AUDIT.md",
+    "sha256": null,
+    "expected_metric": "exact_and_verdict",
+    "expected_value": "828/828",
+    "class": "R2"
+  }
+]
